@@ -379,40 +379,69 @@ article>ul>li img {
 
 /*------introduction-----*/
 
-.section_introuduce{
+.section_introuduce {
     width: 100%;
     /* outline: 2px solid red; */
 }
 
-.section_img{
+.section_img {
     /* outline: 2px snow solid; */
-   width: 50%;
-   padding: 120px 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
+    width: 50%;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
 }
-.containerxxx{
+.section_img p::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right:  20px solid #d9d9d9;
+    border-bottom:  20px  solid transparent;
+    vertical-align: middle;;
+    position: absolute;
+    top: 300px;
+    left: -300px;
+}
+
+.section_img p::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left:  20px solid #d9d9d9;
+    border-bottom:  20px  solid transparent;
+    vertical-align: middle;;
+    position: absolute;
+    top: 300px;;
+    right: -300px;
+}
+
+.container_outside {
     margin: 0 auto;
     width: 80%;
 }
 
-.section_img img{
+
+.section_img img {
     width: 100%;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
 
-.section_img_item{
+.section_img_item {
     width: 300px;
     height: 300px;
 }
 
-.section_img_item_02{
+.section_img_item_02 {
     width: 400px;
     height: 400px;
 }
@@ -456,26 +485,82 @@ article>ul>li img {
     width: 110px;
 }
 
-.wrap_ul_item{
-    margin:10px 0;
+.wrap_ul_item {
+    margin: 10px 0;
     position: relative;
 }
 
-.wrap_ul_item h3{
+.wrap_ul_item h3 {
     padding-top: 5px;
 }
 
-.wrap_ul .wrap_ul_item p{
-    font-weight: normal;    
+.wrap_ul .wrap_ul_item p {
+    font-weight: normal;
     font-size: 10px;
     padding-top: 5px;
 }
 
-.wrap_ul .wrap_ul_item .btn{
+.wrap_ul .wrap_ul_item .btn {
     position: absolute;
-    right:0;
-    top:65px;
+    right: 0;
+    top: 65px;
 }
+
+/*------Group-----*/
+.group_section {
+    width: 100%;
+}
+
+.group {
+    width: 70%;
+    display: flex;
+    justify-items: last baseline;
+    padding: 100px 0 0 300px;
+}
+
+.group_item {
+    display: flex;
+    position: relative;
+}
+
+.group_item h2::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right:  20px solid #d9d9d9;
+    border-bottom:  20px  solid transparent;
+    vertical-align: middle;;
+    position: absolute;
+    bottom: 200px;
+    left: -100px;
+}
+
+.group_item h3 {
+    height: 150px;
+    line-height: 150px;
+    width: 100px;
+    background-color: #d9d9d9;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 12px;
+}
+
+.group_item .group_coach{
+    position: absolute;
+    left: 125px;
+    top:202px;
+}
+
+.group_item img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    padding:50px 0 50px 50px;
+}
+
+
+
 
 /*------reserve(最後一頁)-----*/
 
