@@ -1,0 +1,26 @@
+.top {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #fffafa;
+    opacity: .5;
+
+}
+
+.top a>img {
+    margin-top: 20px;
+    width: 95px;
+    height: 55px;
+}
+
+.top ul {
+    margin-top: 30px;
+}
+
+.top ul>a {
+    margin-left: 40px;
+    font-size: 16px;
+
+}

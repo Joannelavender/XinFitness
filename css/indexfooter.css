@@ -1,0 +1,103 @@
+.footer{
+    width: 100%;
+    background-color: #f0be19;
+}
+
+.footer h2{
+    font-size: 20px;
+    margin:20px auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.footer_item{
+    background-color: #fffafa;
+    display: flex;
+    margin:0 auto;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom:50px;;
+}
+
+.footer_item input[type="email"]{
+    border: none;
+    flex-grow: 1;
+    outline: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color:#f0be19;
+    padding:0 20px;
+}
+
+.footer_item img{
+    height: 20px;
+    padding:15px 10px 0;
+}
+.footer_line{
+    position: relative;;
+}
+
+.footer_line:before , .footer_line:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 15%;
+    background-color: #242423;
+    position: absolute;
+ 
+}
+
+.footer_line:before{
+    left:57%
+}
+.footer_line:after{
+    right: 55%;
+}
+
+.container{
+    margin:0 auto;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding:10px 0;
+    
+}
+
+.container_item{
+    font-size: 12px;
+    margin-left: 100px;
+    line-height: 4;
+}
+
+
+.container_item .fa-brands{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.container iframe{
+    width: auto;
+    height: auto;
+    transform: scale(0.7);
+}
+
+.logo_gray {
+    background-color: #d9d9d9;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.fotter_bottom {
+    background-color: #8e8e8e;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+}
