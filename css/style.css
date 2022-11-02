@@ -37,7 +37,7 @@ a {
 /*------- header-------*/
 
 .banner_first {
-    width: 1260px;
+    width: 100%;
     height: 565px;
     background-image: url(../image/first/image_top_banner.png);
     background-size: cover;
@@ -85,6 +85,7 @@ a {
 .content_first ul>li:first-child {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 50px;
 
 
@@ -93,14 +94,16 @@ a {
 .content_first ul>li:last-child {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 50px;
 }
 
 .hori {
-    flex-direction: row-reverse;
-    width: 35%;
+    flex-direction: row;
+    width: 40%;
     height: 35%;
     text-align: center;
+    align-items: center;
     padding: 0 10px;
 }
 
@@ -112,25 +115,27 @@ article>ul>li img {
 .hori p {
     text-align: left;
     padding: 15px 40px;
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 auto;
     font-weight: normal;
 }
 
 .hori h3 {
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .hori h4 {
     color: #f0be19;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .hori .btn {
     display: block;
-    margin: 5px auto;
+    margin: 0 auto;
 
 }
+
+
 
 
 /*******section********/
@@ -143,12 +148,12 @@ article>ul>li img {
 }
 
 .banner_second h1 {
-    font-size: 36px;
+    font-size: 44px;
     margin: 80px 0 0 0;
 }
 
 .banner_second h2 {
-    font-size: 18px;
+    font-size: 36px;
     margin: 0 auto 50px;
 }
 
@@ -160,7 +165,7 @@ article>ul>li img {
 
 .banner_second_ul li>img {
     margin: 0 auto;
-    height: 60px;
+    height: 100px;
     width: auto;
     display: block;
 
@@ -173,14 +178,15 @@ article>ul>li img {
 
 .banner_second_ul li>h3 {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    padding-top: 20px;
 }
 
 .banner_second_ul li>p {
     margin-top: 20px;
-    margin-left: 20px;
-    font-size: 14px;
-    padding: 0 40px;
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 0 30px;
     font-weight: bold;
 }
 
@@ -191,7 +197,7 @@ article>ul>li img {
 }
 
 .wrapper h1 {
-    font-size: 30px;
+    font-size: 34px;
     text-align: center;
     margin: 50px 0 30px 0;
 
@@ -201,12 +207,12 @@ article>ul>li img {
     display: flex;
     flex-flow: column wrap;
     width: 600px;
-    height: 400px;
+    height: 550px;
     margin: auto;
 }
 
 .wrapper_left img:first-child {
-    width: 30%;
+    width: 40%;
     height: 70%;
     margin-top: 90px;
     margin-right: 20px;
@@ -221,13 +227,13 @@ article>ul>li img {
 .wrapper_left h2 {
     margin-top: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 24px;
     color: #f0be19;
+    margin-left:30px;
 }
 
 .wrapper p {
-    font-size: 12px;
-    ;
+    font-size: 18px;
     width: 40%;
     margin-left: 80px;
     margin-top: 5px;
@@ -429,12 +435,6 @@ article>ul>li img {
 .section_img img {
     width: 100%;
 }
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 
 .section_img_item {
     width: 300px;
