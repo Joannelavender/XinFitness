@@ -501,14 +501,14 @@ article > ul > li img {
   z-index: -2;
 }
 
-.second_div h4 {
+.second_div p {
   background-color: #fffafa;
-  width: 300px;
-  height: 150px;
+  width: 250px;
+  height: 125px;
   position: absolute;
-  right: 100px;
-  bottom: -100px;
-  font-size: 48px;
+  right: 60px;
+  bottom: -125px;
+  font-size: 40px;
   line-height: 200px;
   text-align: center;
   padding-bottom: 100px;
