@@ -602,7 +602,7 @@ article > ul > li img {
 
 .service_pay {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 100px 0;
 }
 
@@ -610,38 +610,37 @@ article > ul > li img {
   border: 2px solid #f0be19;
 }
 
-.service_pay_first h3{
+.service_pay_first h3 {
   font-size: 36px;
   text-align: center;
-  margin:20px 20px;
+  margin: 20px 20px;
 }
 
-.service_pay_first p{
+.service_pay_first p {
   font-size: 24px;
-  padding:20px 30px;
+  padding: 20px 30px;
 }
 .service_pay_second {
   border: 2px solid #f0be19;
   width: 50%;
   position: relative;
 }
-.service_pay_second .fa-solid{
+.service_pay_second .fa-solid {
   font-size: 36px;
   position: absolute;
   left: 28px;
-  top:30px;  
-
+  top: 30px;
 }
-.service_pay_second h3{
+.service_pay_second h3 {
   font-size: 36px;
   text-align: left;
-  margin:20px 20px;
+  margin: 20px 20px;
   padding-left: 67px;
 }
 
-.service_pay_second p{
+.service_pay_second p {
   font-size: 24px;
-  padding:25px 50px 25px 90px;
+  padding: 25px 50px 25px 90px;
   line-height: 1.8;
 }
 
@@ -649,63 +648,57 @@ article > ul > li img {
 
 .wrap_section {
   width: 100%;
-  /* display: flex; */
 }
 
-/* .wrap_ul {
-  width: 70%;
-  height: 80%;
-  padding: 150px 185px;
-  flex-direction: column;
+.wrap_ul {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 50px;
 }
 
 .wrap_ul li {
-  display: flex;
-  background-color: #d9d9d9;
-  margin: 40px 0;
-  align-items: stretch;
-  border-radius: 10px;
-  padding: 20px 20px;
-  justify-content: space-around;
+  padding-left: 10px;
 }
 
 .wrap_ul h2 {
   background-color: #f0be19;
-  margin: 10px 15px;
-  width: 100px;
+  width: 280px;
+  height: 180px;
+  font-size: 36px;
   text-align: center;
-  line-height: 80px;
-  border-radius: 10px;
-}
-
-.wrap_ul .wrap_ul_first {
-  width: 125px;
-}
-
-.wrap_ul .wrap_ul_third {
-  width: 110px;
+  line-height: 180px;
+ 
 }
 
 .wrap_ul_item {
-  margin: 10px 0;
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 500px;
   position: relative;
 }
 
 .wrap_ul_item h3 {
-  padding-top: 5px;
+  font-size: 22px;
+  padding: 10px 10px;
+  text-align: center;
 }
 
-.wrap_ul .wrap_ul_item p {
+.wrap_ul_item p{
+  padding-top: 47px;
   font-weight: normal;
-  font-size: 10px;
-  padding-top: 5px;
+  font-size: 18px;
+  padding: 10px 50px;
 }
 
-.wrap_ul .wrap_ul_item .btn {
+.wrap_ul_item .btn{
   position: absolute;
-  right: 0;
-  top: 65px;
-} */
+  right: 93px;
+  bottom: 30px;
+}
+
+
 
 /*------Group-----*/
 .group_section {
