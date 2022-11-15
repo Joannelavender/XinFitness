@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body {
@@ -669,7 +669,6 @@ article > ul > li img {
   font-size: 36px;
   text-align: center;
   line-height: 180px;
- 
 }
 
 .wrap_ul_item {
@@ -685,20 +684,18 @@ article > ul > li img {
   text-align: center;
 }
 
-.wrap_ul_item p{
+.wrap_ul_item p {
   padding-top: 47px;
   font-weight: normal;
   font-size: 18px;
   padding: 10px 50px;
 }
 
-.wrap_ul_item .btn{
+.wrap_ul_item .btn {
   position: absolute;
   right: 93px;
   bottom: 30px;
 }
-
-
 
 /*------Group-----*/
 .group_section {
@@ -751,6 +748,84 @@ article > ul > li img {
   display: block;
   margin: 0 auto;
   padding: 50px 0 50px 50px;
+}
+
+/*------Coach-----*/
+
+.two_div_container {
+  width: 100%;
+  padding: 150px 0 300px 0;
+}
+
+.div_container {
+  display: flex;
+  max-width: 100%;
+  height: 800px;
+  /* position: relative; */
+}
+
+.coach_div{
+  position: relative;
+  width: 1200px;
+  margin:0 auto;
+}
+
+/*左邊的圖*/
+
+.first_div_container {
+  width: 500px;
+  height: 780px;
+  border: 2px solid #f0be19;
+  border-radius: 0 100px 0 0;
+  position: absolute;
+  left: 150px;
+  top:100px;
+
+}
+
+.first_div_container h3{
+  font-size: 36px;
+  padding:10px 0 0 60px;
+
+}
+
+.first_div_container h4 {
+  background-image: url(/image/five/Ariel.png);
+  background-size: cover;
+  border-radius: 0 100px 0 0;
+  width: 400px;
+  height: 600px;
+  margin:10px 0 0 50px;
+}
+
+.first_div_container .btn{
+  margin-left: 55px;
+  margin-top: 50px;
+}
+
+/*右邊的圖*/
+.second_div_container {
+  width: 500px;
+  height: 780px;
+  background-color:rgba(240, 190, 25,.7);
+  border-radius: 200px 0 0 0;
+  position: absolute;
+  right:70px;
+  top:150px;
+} 
+
+.second_div_container li{
+  padding-top: 50px;
+  padding-left: 30px;
+   margin:50px 50px 30px 80px;
+}
+.second_div_container h3{
+  font-size: 26px;
+}
+.second_div_container p{
+  padding-top: 10px;
+  font-size: 22px;
+  font-weight: normal;
 }
 
 /*------reserve(最後一頁)-----*/
