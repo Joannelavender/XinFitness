@@ -77,6 +77,10 @@
   display: inline-block;
 }
 
-.top_ul .fa-solid{ 
+.top .fa-solid{ 
+  display: none;
+}
+
+.hidden{
   display: none;
 }

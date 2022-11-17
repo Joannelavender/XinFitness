@@ -1,0 +1,38 @@
+@media screen and (max-width: 428px){
+    /*---------nav-------*/
+
+    .top{
+        background-color:#d9d9d9;
+        width: 100%;
+    }
+    .top_ul{
+       display: none;
+    }
+
+    .top .fa-solid{
+        display: block;
+        padding-top: 20px;
+        color: #f0be19;
+        padding-left: 125px;
+        font-size: 30px;
+        transform:translateX(40px);
+    }
+
+    .top_ul li:last-child > a{
+        display: inline-block;
+    }
+
+    .hidden{
+        display: block;
+        transform: translateX(-55px);
+        font-size: 6px;
+        color: #fafafa;
+        background-color: #f0be19;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin-top: 11px;
+        text-align: center;
+      
+    }
+}
