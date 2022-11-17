@@ -17,8 +17,8 @@
         display: block;
         padding-top: 20px;
         color: #f0be19;
-        padding-left: 125px;
-        font-size: 35px;
+        padding-left: 115px;
+        font-size: 30px;
         transform:translateX(40px);
     }
 
@@ -33,11 +33,11 @@
         color: #fafafa;
         background-color: #f0be19;
         border-radius: 50%;
-        width: 50px;
-        height: 45px;
-        margin-top: 11px;
+        width: 45px;
+        height: 40px;
+        margin-top: 14px;
         text-align: center;
-        padding-top:5px;
+        padding-top:1px;
     }
 
     /*-------header---------*/
