@@ -43,8 +43,13 @@
     /*-------header---------*/
 
     .banner_first{
-        width:100%;
-        background-image: url(/image/first/RWD_indexbanner.png);
+        max-width:100%;
+        background-image: url(/image/first/RWD_banner.png);
+        background-size: cover;
+        height: 400px;
+    }
+    .head{
+        padding-top:245px;
     }
 
     .head h1{
@@ -54,14 +59,21 @@
     }
 
     .head h2{
-        font-size:20px;
+        font-size:18px;
         margin-left:-67px;
-        padding-top:10px;
+        padding-top:8gpx;
     }
 
 
     .head a{
         margin-left:-20px;
         margin-top:15px;
+    }
+
+    .head .btn{
+        border-radius:10px;
+        font-size:8px;
+        width:75px;
+        line-height:25px;
     }
 }
