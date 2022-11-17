@@ -50,23 +50,25 @@
     }
     .head{
         padding-top:245px;
+        width: 400px;
+        margin-left:14px;
     }
 
     .head h1{
         font-size:36px;
-        margin-left:-80px;
+        margin-left:12px;
         margin-top:-50px;
     }
 
     .head h2{
         font-size:18px;
-        margin-left:-67px;
-        padding-top:8gpx;
+        margin-left:40px;
+        padding-top:8px;
     }
 
 
     .head a{
-        margin-left:-20px;
+        margin-left:80px;
         margin-top:15px;
     }
 
