@@ -1,81 +1,126 @@
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
+  /*---------nav-------*/
+  .top {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 75px;
+  }
+  .top_ul {
+    display: none;
+  }
+  .top a > img {
+    margin-top: 15px;
+  }
 
-    /*---------nav-------*/
-    .top{
-        background-color:#d9d9d9;
-        width: 100%;
-        height: 75px;
-    }
-    .top_ul{
-       display: none;
-    }
-    .top a > img{
-        margin-top:15px;
-    }
+  .top .fa-solid {
+    display: block;
+    padding-top: 20px;
+    color: #f0be19;
+    padding-left: 115px;
+    font-size: 30px;
+    transform: translateX(40px);
+  }
 
-    .top .fa-solid{
-        display: block;
-        padding-top: 20px;
-        color: #f0be19;
-        padding-left: 115px;
-        font-size: 30px;
-        transform:translateX(40px);
-    }
+  .top_ul li:last-child > a {
+    display: inline-block;
+  }
 
-    .top_ul li:last-child > a{
-        display: inline-block;
-    }
+  .hidden {
+    display: block;
+    transform: translateX(-60px);
+    font-size: 6px;
+    color: #fafafa;
+    background-color: #f0be19;
+    border-radius: 50%;
+    width: 45px;
+    height: 40px;
+    margin-top: 14px;
+    text-align: center;
+    padding-top: 1px;
+  }
 
-    .hidden{
-        display: block;
-        transform: translateX(-60px);
-        font-size: 6px;
-        color: #fafafa;
-        background-color: #f0be19;
-        border-radius: 50%;
-        width: 45px;
-        height: 40px;
-        margin-top: 14px;
-        text-align: center;
-        padding-top:1px;
-    }
+  /*------漢堡-------*/
+  .top_ul {
+    display: block;
+    background-color: #f0be19;
+    width: 56%;
+    height: 400px;
+    box-shadow: 100px 0px 0px 0px rgb(35 35 36);
+  }
 
-    /*-------header---------*/
+  .top_ul li:first-child > a {
+    display: none;
+  }
 
-    .banner_first{
-        max-width:100%;
-        background-image: url(/image/first/RWD_banner.png);
-        background-size: cover;
-        height: 400px;
-    }
-    .head{
-        padding-top:245px;
-        width: 400px;
-        margin-left:14px;
-    }
+  .top_ul > li a {
+    color: #fafafa;
+    padding: 20px 0 10px 30px;
+  }
 
-    .head h1{
-        font-size:36px;
-        margin-left:12px;
-        margin-top:-50px;
-    }
+  .top_container {
+    display: block;
+  }
 
-    .head h2{
-        font-size:18px;
-        margin-left:40px;
-        padding-top:8px;
-    }
+  .top_container li a {
+    color: #8e8e8e;
+    font-size: 16px;
+  }
+  .top_container li {
+    padding-left: 10px;
+  }
 
+  #fa-xmark {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    font-size: 30px;
+    color: #fafafa;
+  }
 
-    .head a{
-        margin-left:80px;
-        margin-top:15px;
-    }
+  #fa-chevron {
+    display: block;
+    position: absolute;
+    left: 110px;
+    bottom: 230px;
+    color: #fafafa;
+  }
 
-    .head .btn{
-        border-radius:10px;
-        font-size:8px;
-        width:75px;
-        line-height:25px;
-    }
+  /*-------header---------*/
+
+  .banner_first {
+    max-width: 100%;
+    background-image: url(/image/first/RWD_fristbanner.png);
+    background-position: calc(100% - -114px) calc(100% - -76px);
+    background-size: cover;
+    height: 400px;
+  }
+  .head {
+    padding-top: 245px;
+    width: 400px;
+    margin-left: 14px;
+  }
+
+  .head h1 {
+    font-size: 36px;
+    margin-top: -50px;
+  }
+
+  .head h2 {
+    font-size: 18px;
+    margin-left: 17px;
+    padding-top: 8px;
+  }
+
+  .head a {
+    margin-left: 60px;
+    margin-top: 15px;
+  }
+
+  .head .btn {
+    border-radius: 10px;
+    font-size: 8px;
+    width: 75px;
+    line-height: 25px;
+  }
 }
