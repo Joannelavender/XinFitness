@@ -192,5 +192,18 @@
     display: block;
   }
 
+  .top_ulitem:hover .top_container{
+    position: static;
+    right: none;
+    width: 100%;
+    right: unset;
+    top: unset;
+    background-color: unset;
+    box-shadow: unset;
+  }
 
+  .top_ul > li a:hover{
+    color:#fafafa;
+    
+  }
 }

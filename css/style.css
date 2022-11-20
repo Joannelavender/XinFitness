@@ -64,14 +64,43 @@ a {
   margin-top: 10px;
 }
 
+/*banner下方的跑馬燈*/
+.scroll_top {
+  display: flex;
+  background: #d9d9d9;
+  height: 52px;
+  line-height: 52px;
+  justify-content: center;
+  display: none;
+}
+.scroll_top .text {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 @media screen and (max-width: 414px) {
   .banner_first {
     max-width: 100%;
     background-image: url(/image/first/RWD_fristbanner.png);
-    background-position: calc(100% - -114px) calc(100% - -76px);
+    background-position: calc(100% - -114px) calc(100% - -1px);
     background-size: cover;
     height: 400px;
   }
+
+  .scroll_top {
+    display: block;
+    font-size: 15px;
+    background-color: #f0be19;
+  }
+
   .head {
     padding-top: 245px;
     width: 400px;
@@ -104,41 +133,39 @@ a {
 
 /*------- article-------*/
 
-.content_first_h2_div{
+.content_first_h2_div {
   max-width: 100%;
   width: 1000px;
   position: relative;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.content_first_h2{
+.content_first_h2 {
   width: 100%;
   text-align: center;
-  font-size:36px;
-  margin:-30px 0 40px 0;
+  font-size: 36px;
+  margin: -30px 0 40px 0;
   /* position: relative; */
 }
 
-.content_first_h2::before{
+.content_first_h2::before {
   content: "";
   background-color: #242423;
   height: 4px;
   width: 85px;
   position: absolute;
-  top:26px;
-  left:160px;
-
+  top: 26px;
+  left: 160px;
 }
 
-.content_first_h2::after{
+.content_first_h2::after {
   content: "";
   background-color: #242423;
   height: 4px;
   width: 85px;
   position: absolute;
-  top:26px;
-  right:160px;
-
+  top: 26px;
+  right: 160px;
 }
 
 .content_first {
@@ -200,51 +227,50 @@ a {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 414px){
-
-.content_first{
-  margin:80px auto;
-}
+@media screen and (max-width: 414px) {
+  .content_first {
+    margin: 80px auto;
+  }
   /*第一區塊標題用直行排列*/
-  .content_first ul > li:last-child{
+  .content_first ul > li:last-child {
     flex-direction: column;
   }
 
-  .content_first > ul > li img{
+  .content_first > ul > li img {
     width: 80%;
     margin-top: 20px;
-    box-shadow: 0px 0px 0px 42px #D9D9D9;
+    box-shadow: 0px 0px 0px 42px #d9d9d9;
   }
 
-  .hori h3{
+  .hori h3 {
     font-size: 24px;
     margin-top: 80px;
   }
 
   /*把標題的裝飾關掉*/
-  .content_first_h2::before, .content_first_h2::after{
+  .content_first_h2::before,
+  .content_first_h2::after {
     display: none;
   }
 
-  .content_first ul > li:first-child{
+  .content_first ul > li:first-child {
     flex-direction: column-reverse;
   }
- .content_first_h2{
+  .content_first_h2 {
     font-size: 24px;
     margin-bottom: 50px;
   }
-  .hori{
+  .hori {
     width: 90%;
   }
-  .hori h4{
+  .hori h4 {
     font-size: 18px;
     padding-top: 10px;
   }
 
-  .hori p{
+  .hori p {
     padding-top: 15px;
   }
-
 }
 
 /*******section********/
@@ -299,38 +325,37 @@ a {
 }
 
 @media screen and (max-width: 414px) {
-  .banner_second{
+  .banner_second {
     max-width: 100%;
-  
   }
 
-  .banner_second_ul{
+  .banner_second_ul {
     width: 75%;
   }
-  .banner_second h1{
+  .banner_second h1 {
     font-size: 1.5em;
   }
 
-  .banner_second h2{
+  .banner_second h2 {
     font-size: 1em;
     -webkit-text-stroke: 1px #242423;
     -webkit-text-fill-color: transparent;
     padding-top: 10px;
   }
-  .banner_second_ul li > img{
-    height:70px;
+  .banner_second_ul li > img {
+    height: 70px;
   }
-  .banner_second_ul li > h3{
+  .banner_second_ul li > h3 {
     font-size: 16px;
     padding-top: 10px;
   }
-  .banner_second_ul li > p{
+  .banner_second_ul li > p {
     font-size: 12px;
     margin-left: 0;
-    padding:0 10px;
+    padding: 0 10px;
     text-align: left;
   }
-  .banner_second_ul li{
+  .banner_second_ul li {
     margin-left: 13px;
   }
 }
@@ -404,39 +429,38 @@ a {
   margin: 0 auto;
 }
 
-
-@media screen and (max-width:414px){
-  .wrapper h1{
-    font-size:24px;
+@media screen and (max-width: 414px) {
+  .wrapper h1 {
+    font-size: 24px;
   }
-  .wrapper_right h2{
+  .wrapper_right h2 {
     font-size: 16px;
-    margin-top:38px;
+    margin-top: 38px;
     margin-left: 75px;
   }
-  .wrapper_right p{
+  .wrapper_right p {
     font-size: 13px;
   }
 
-  .wrapper_flex{
+  .wrapper_flex {
     flex-direction: column;
   }
-  .wrapper_left h3{
-   max-width: 90%;
-   height: 225px;
+  .wrapper_left h3 {
+    max-width: 90%;
+    height: 225px;
   }
 
-  .wrapper_left h4{
+  .wrapper_left h4 {
     height: 200px;
     left: 35px;
     bottom: -11px;
     width: 80%;
   }
 
-  .wrapper_right{
-    max-width:100%;
+  .wrapper_right {
+    max-width: 100%;
   }
-  .wrapper_right .btn{
+  .wrapper_right .btn {
     margin-left: 150px;
   }
 }
@@ -449,8 +473,8 @@ a {
 .breadcrumbList {
   width: 100%;
   max-width: 100%;
-  position: fixed;
-  margin-top: 64px;
+  /* position: fixed; */
+  margin-top: -1px;
 }
 
 .container_list {
@@ -475,10 +499,42 @@ a {
   top: 4px;
 }
 
+.rwd_banner {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .breadcrumbList {
+    display: none;
+  }
+  .rwd_banner {
+    display: block;
+    max-width: 100%;
+    width: 414px;
+    /* height: 350px; */
+  }
+  .rwd_banner_item {
+    margin: 100px 0;
+  }
+  .rwd_banner h2 {
+    color: #8e8e8e;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  .rwd_banner h3 {
+    color: #f0be19;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 0.1em;
+  }
+}
+
 /*------grid------*/
 
 .container_article {
-  width: 100%;
+  max-width: 100%;
 }
 
 .container_grid {
@@ -489,6 +545,7 @@ a {
   height: 1310px;
   margin: 0 auto;
   padding: 300px 0;
+  
 }
 
 /*---grid第一欄--*/
@@ -525,8 +582,8 @@ a {
 }
 /* grid第1/2欄 */
 
-.container_item_span{
-  grid-column-start:1;
+.container_item_span {
+  grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -666,6 +723,31 @@ a {
   max-width: 100%;
 }
 
+@media screen and (max-width: 414px) {
+  .container_grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+  }
+  /*隱藏grid第二欄*/
+  .container_item_span,
+  .container_span_first,
+  .container_item_middle,
+  .container_span_second,
+  .container_span_third {
+    display: none;
+  }
+  .container_grid img:nth-child(4),
+  .container_grid img:nth-child(8) {
+    display: none;
+  }
+
+ /*調整原本gird的第一欄*/
+  .container_grid img:first-child{
+   
+  }
+}
+
 /*------introduction-----*/
 
 /*------banner-----*/
@@ -771,10 +853,9 @@ a {
   width: 80%;
 }
 
-.container_outside h2{
+.container_outside h2 {
   text-align: center;
   font-size: 24px;
-
 }
 
 .section_img img {
@@ -916,7 +997,7 @@ a {
 .group_section {
   width: 100%;
   background-color: #8e8e8e;
-  padding:50px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -929,11 +1010,9 @@ a {
   transform: translateX(200px);
 }
 
-
 .group_item {
   position: relative;
 }
-
 
 .group_item img {
   width: 800px;
@@ -1027,7 +1106,7 @@ a {
 .section_item {
   padding: 150px 0 50px 0;
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -1037,7 +1116,7 @@ a {
   letter-spacing: 0.2em;
   padding-bottom: 30px;
   position: relative;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .section_item h3::before {
@@ -1046,9 +1125,8 @@ a {
   height: 4px;
   width: 85px;
   position: absolute;
-  top:28px;
-  left:345px;
-
+  top: 28px;
+  left: 345px;
 }
 
 .section_item h3::after {
@@ -1059,60 +1137,56 @@ a {
   width: 85px;
   position: absolute;
   top: 28px;
-  right:345px;
-
+  right: 345px;
 }
 
-.section_item img{
+.section_item img {
   display: block;
   width: 100%;
 }
 
 /*-----form-----*/
 
-.section_item_form{
+.section_item_form {
   width: 100%;
   background-color: #d9d9d9;
 }
 
-.section_item_form_outer{
+.section_item_form_outer {
   max-width: 100%;
   height: 800px;
-  margin:100px 0 150px 0;
-  
+  margin: 100px 0 150px 0;
 }
 
-.section_item_form h3{
- text-align: center;
- font-size: 36px;
- letter-spacing: 0.3em;
- padding:30px 0;
+.section_item_form h3 {
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 0.3em;
+  padding: 30px 0;
 }
 
-.section_reserve{
+.section_reserve {
   width: 30%;
-  margin:0 auto;
-
+  margin: 0 auto;
 }
 
-.section_reserve label{
-  padding:15px 0;
+.section_reserve label {
+  padding: 15px 0;
 }
-
 
 .section_item_form .form_control {
   border: 1.5px solid #242423;
   display: block;
   width: 100%;
-  margin:5px 0;
+  margin: 5px 0;
   line-height: 40px;
 }
 
-.form_control_select{
+.form_control_select {
   border: 1.5px solid #242423;
   display: block;
   width: 101.5%;
-  margin:5px 0;
+  margin: 5px 0;
   line-height: 40px;
   height: 45px;
 }
@@ -1136,4 +1210,4 @@ a {
   letter-spacing: 2px;
   font-family: "Noto Sans TC";
   font-weight: bold;
-} 
+}

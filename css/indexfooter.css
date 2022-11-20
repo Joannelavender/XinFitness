@@ -25,11 +25,12 @@
   flex-grow: 1;
   outline: none;
   border-radius: 5px;
+  padding: 0 20px;
+ 
 }
 
-::placeholder {
+.footer_item input[type="email"]::placeholder {
   color: #f0be19;
-  padding: 0 20px;
 }
 
 .footer_item img {
@@ -74,7 +75,7 @@
   justify-content: space-between;
 }
 
-.container_item .fa-brands {
+#fa_icon {
   font-size: 25px;
   padding-left: 10px;
 }
@@ -148,6 +149,7 @@
   }
 
   .scroll{
-    display: none;
+   display: none;
+
   }
 }
