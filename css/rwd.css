@@ -1,6 +1,6 @@
 @media screen and (max-width: 414px) {
   /*---------nav-------*/
-  .top {
+  /* .top {
     background-color: #d9d9d9;
     width: 100%;
     height: 75px;
@@ -37,10 +37,10 @@
     margin-top: 14px;
     text-align: center;
     padding-top: 1px;
-  }
+  } */
 
   /*------漢堡-------*/
-  .top_ul {
+  /* .top_ul {
     display: block;
     background-color: #f0be19;
     width: 56%;
@@ -84,10 +84,10 @@
     left: 110px;
     bottom: 230px;
     color: #fafafa;
-  }
+  } */
 
   /*-------header---------*/
-
+/* 
   .banner_first {
     max-width: 100%;
     background-image: url(/image/first/RWD_fristbanner.png);
@@ -122,28 +122,6 @@
     font-size: 8px;
     width: 75px;
     line-height: 25px;
-  }
+  } */
 }
 
-/*-------footer---------*/
-
-.footer h2 {
-  font-size: 22px;
-}
-
-.footer_item {
-  width: 380px;
-}
-
-.footer_line:after {
-  width: 86%;
-  right: 8%;
-}
-
-.footer_line:before {
-  display: none;
-}
-
-.container_item_first {
-  display: none;
-}

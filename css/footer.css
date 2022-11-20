@@ -35,7 +35,7 @@
 }
 
 .container_item{
-    font-size: 16px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     line-height: 4;
@@ -91,3 +91,33 @@
     font-size: 12px;
     font-weight: normal;
 }
+
+
+@media screen and (max-width: 414px){
+
+    .footer_item {
+        width: 380px;
+      }
+      
+      .footer_line:after {
+        width: 86%;
+        right: 8%;
+      }
+      
+      .footer_line:before {
+        display: none;
+      }
+      
+      .container_item_first {
+        display: none;
+      }
+      .container_item{
+        font-size: 14px;
+        margin-left: -65px;
+      }
+    
+      .scroll{
+        display: none;
+      }
+}
+    

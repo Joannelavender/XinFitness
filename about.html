@@ -18,7 +18,7 @@
     <!--nav-->
     <nav class="top">
       <a href="./index.html"><img src="./image/first/Logo.png" alt="" /></a>
-      <ul class="top_ul">
+      <ul class="top_ul open_nav">
         <li><a href="./index.html">首頁</a></li>
         <li><a href="./about.html">關於我們</a></li>
         <li><a href="./introduction.html">環境介紹</a></li>
@@ -28,12 +28,20 @@
           <ul class="top_container">
             <li><a href="./Coach.html">Ariel教練</a></li>
             <li><a href="./Coach.html">Zack教練</a></li>
-            <li><a href="./Coach.html">Brain教練</a><li>
-            <li><a href="./Coach.html">Jerry教練</a><li>
+            <li><a href="./Coach.html">Brain教練</a></li>
+            <li></li>
+            <li><a href="./Coach.html">Jerry教練</a></li>
+            <li></li>
           </ul>
         </li>
         <li><a href="./reserve.html">預約體驗</a></li>
+        <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+        <i class="fa-solid fa-chevron-down" id="fa-chevron"></i>
       </ul>
+      <!-- <i class="fa-solid fa-xmark" id="fa-xmark"></i> -->
+      <!-- <i class="fa-solid fa-chevron-down" id="fa-chevron"></i> -->
+      <i class="fa-solid fa-bars" id="fa-baropen"></i>
+      <a href="./reserve.html" class="hidden">預約<br />體驗</a>
     </nav>
 
     <!--麵包屑-->
@@ -131,5 +139,8 @@
         >
       </div>
     </footer>
+    
+    <script src="/javascript/vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./javascript/open.js"></script>
   </body>
 </html>
