@@ -89,7 +89,7 @@ a {
 @media screen and (max-width: 414px) {
   .banner_first {
     max-width: 100%;
-    background-image: url(/image/first/RWD_fristbanner.png);
+    background-image: url(../image/first/RWD_fristbanner.png);
     background-position: calc(100% - -114px) calc(100% - -1px);
     background-size: cover;
     height: 400px;
@@ -116,7 +116,7 @@ a {
     font-size: 18px;
     margin-left: 17px;
     padding-top: 8px;
-  }
+    color:#242423
 
   .head a {
     margin-left: 60px;
