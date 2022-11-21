@@ -726,8 +726,8 @@ a {
   .container_grid {
     display: flex;
     flex-direction: column;
-    max-width: 65%;
-    padding-top: 100px;
+    max-width: 70%;
+    padding:100px 0;
   }
   /*隱藏grid第二欄*/
   .container_item_span,
@@ -741,30 +741,33 @@ a {
   .container_grid img:nth-child(8) {
     display: none;
   }
-
-  .container_grid .container_item_left{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-
   
   .container_item_right h3, .container_item_left h3{
     margin:0 auto;
     font-size: 22px;
-    padding:10px 0;
+    padding:15px 0;
   }
 
   .container_item_right p, .container_item_left p{
     padding:0;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: normal;
   }
 
   .container_item_right p:before{
     display: none;
   }
  
+  .container_grid img:first-child{
+    box-shadow: 0px 30px 0px 0px #d9d9d9;
+    margin-bottom: 50px;
+  }
 
+  .container_grid_lastimg{
+    margin-top: 50px;
+    box-shadow: 0px 30px 0px 0px #d9d9d9;
+    margin-bottom: 10px;
+  }
 }
 
 /*------introduction-----*/
@@ -792,6 +795,7 @@ a {
   z-index: -1;
 }
 .second_div h3 {
+  max-width: 100%;
   width: 900px;
   height: 300px;
   margin: 0 auto;
@@ -802,13 +806,14 @@ a {
 
 .second_div h3::after {
   content: "";
-  width: 1000px;
+  width: 962px;
   height: 250px;
   background-color: #d9d9d9;
   position: absolute;
-  left: 80px;
+  left: 117px;
   bottom: -45px;
   z-index: -2;
+  max-width: 100%;
 }
 
 .second_div p {
@@ -822,6 +827,12 @@ a {
   line-height: 125px;
   text-align: center;
   padding-bottom: 100px;
+}
+
+@media screen and (max-width:414px){
+  .second_div h3{
+      
+  }
 }
 
 /*------輪播-----*/
@@ -875,6 +886,30 @@ a {
 .container_outside h2 {
   text-align: center;
   font-size: 24px;
+  position: relative;
+  max-width: 100%;
+  width: 400px;
+  margin:0 auto;
+}
+
+.container_outside h2::before{
+  content: "";
+  background-color: #242423;
+  height: 4px;
+  width: 85px;
+  position: absolute;
+  top: 20px;
+  left: 330px;
+}
+
+.container_outside h2::after{
+  content: "";
+  background-color: #242423;
+  height: 4px;
+  width: 85px;
+  position: absolute;
+  top: 20px;
+  right: 330px;
 }
 
 .section_img img {

@@ -40,7 +40,7 @@
   display: none;
 }
 
-.top_ulitem:hover .top_container {
+.top_ulitem .top_container {
   display: block;
   background-color: #fafafa;
   width: 20%;
@@ -49,6 +49,10 @@
   right: 83px;
   top: 44px;
   box-shadow: 3px 3px 3px #888888;
+  display: none;
+}
+.top_ulitem:hover .top_container {
+  display: block;
 }
 
 .top_ulitem .top_container a {
@@ -181,18 +185,17 @@
     color: #fafafa;
     font-size: 16px;
   }
-  
-  .top_container{
+
+  .top_container {
     display: none;
   }
 
-
   /*展開教練子選單*/
-  .open_topcontainer{
+  .top_ulitem .open_topcontainer {
     display: block;
   }
 
-  .top_ulitem:hover .top_container{
+  .top_ulitem .top_container {
     position: static;
     right: none;
     width: 100%;
@@ -202,8 +205,7 @@
     box-shadow: unset;
   }
 
-  .top_ul > li a:hover{
-    color:#fafafa;
-    
+  .top_ul > li a:hover {
+    color: #fafafa;
   }
 }
