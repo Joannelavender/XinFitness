@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/footer.css"> 
     <script src="https://kit.fontawesome.com/efeb5ad6f6.js" crossorigin="anonymous"></script>
     <title>環境介紹</title>
 </head>
@@ -54,7 +59,7 @@
         <div class="second_div">
             <h3>
             <p>環境介紹</p>
-        </h3>
+            </h3>
         </div>
     </section>
     <div class="scroll_top">
@@ -69,17 +74,37 @@
             <h2>場館環境</h2>
             <div class="section_img">
                 <p></p>
-                <img src="./image/third/top_left.png" alt="" class="section_img_item">
-                <img src="./image/third/top_middle.png" alt="" class="section_img_item_02">
-                <img src="./image/third/top_right.png" alt="" class="section_img_item">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./image/third/top_left.png"></div>
+                      <div class="swiper-slide"><img src="./image/third/top_middle.png"></div>
+                      <div class="swiper-slide"><img src="./image/third/top_right.png"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <!-- <img src="./image/third/top_left.png" alt="" class="section_img_item"> -->
+                <!-- <img src="./image/third/top_middle.png" alt="" class="section_img_item_02"> -->
+                <!-- <img src="./image/third/top_right.png" alt="" class="section_img_item"> -->
             </div>
             <h2>器材</h2>
-            <div class="section_img">
-                <h2></h2>
+            <!-- <div class="section_img">
+                <h3></h3>
                 <p></p>
-                <img src="./image/third/bottom_left.png" alt="" class="section_img_item">
-                <img src="./image/third/bottom_middle.png" alt="" class="section_img_item_02">
-                <img src="./image/third/bottom_right.png" alt="" class="section_img_item">
+                <div class="mySwiper_second">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./image/third/bottom_left.png"></div>
+                      <div class="swiper-slide"><img src="./image/third/bottom_middle.png"></div>
+                      <div class="swiper-slide"><img src="./image/third/bottom_right.png"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div> -->
+                <!-- <img src="./image/third/bottom_left.png" alt="" class="section_img_item"> -->
+                <!-- <img src="./image/third/bottom_middle.png" alt="" class="section_img_item_02"> -->
+                <!-- <img src="./image/third/bottom_right.png" alt="" class="section_img_item"> -->
             </div>
         </div>
     </section>
@@ -120,8 +145,26 @@
         </div>
     </footer>
     <script src="./javascript/vendors/jquery/jquery-3.6.1.min.js"></script>
-    <script src="./javascript/vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="./javascript/slide.js"></script>
+    <script src="./javascript/changebg.js"></script>
     <script src="./javascript/open.js"></script>
+    <script>
+       var mySwiper_second = new Swiper(".mySwiper_second", {
+            //   cssMode: true, 
+            loop:true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                  clickable: true,
+                el: ".swiper-pagination",
+              },
+              mousewheel: true,
+          
+            });
+      </script>
 </body>
 
 </html>
