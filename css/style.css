@@ -472,8 +472,8 @@ a {
 .breadcrumbList {
   width: 100%;
   max-width: 100%;
-  /* position: fixed; */
-  margin-top: -1px;
+  padding-top: 64px;
+  /* margin-top: -1px; */
 }
 
 .container_list {
@@ -831,7 +831,7 @@ a {
 
 @media screen and (max-width:414px){
   .second_div h3{
-      
+
   }
 }
 
