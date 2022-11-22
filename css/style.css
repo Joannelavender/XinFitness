@@ -1167,8 +1167,8 @@ a {
 @media screen and (max-width:414px){
   .group{
     transform: unset;
-    width: 190%;
-    padding: 10px 0 10px 0px;
+    width: 130%;
+    padding: 10px 0 10px 85px;
    
     height: 80%;
   }

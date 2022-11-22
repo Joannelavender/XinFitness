@@ -99,13 +99,18 @@
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
     left: 60px;
-    right: auto;
+    top: 370px;
     color: #242423;
+    
   }
 
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     display: none;
+  }
+
+  .swiper-backface-hidden .swiper-slide{
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
   }
 
   
