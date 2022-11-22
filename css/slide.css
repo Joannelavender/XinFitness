@@ -32,36 +32,47 @@
   object-fit: cover;
 }
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev{
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
   right: -100px;
   left: auto;
-  color:#f0be19;
+  color: #f0be19;
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next{
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
   left: -100px;
   right: auto;
-  color:#f0be19;
+  color: #f0be19;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   width: 70%;
 }
 
-@media screen and (max-width:414px){
-  .swiper-button-next, .swiper-rtl .swiper-button-prev{
-    right: -40px;
+@media screen and (max-width: 414px) {
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: -35px;
     left: auto;
     color: #f0be19;
   }
 
-  .swiper-button-prev, .swiper-rtl .swiper-button-next{
-    left: -40px;
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: -35px;
     right: auto;
     color: #f0be19;
   }
 
-  .swiper-slide img{
+  .swiper-slide img {
     width: 100%;
+  }
+  .swiper .swiper-button-prev:root{
+    --swiper-navigation-size: 30px;
+  }
+  .swiper .swiper-button-next:root{
+    --swiper-navigation-size: 30px;
+  
   }
 }
