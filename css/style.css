@@ -7,7 +7,7 @@ body {
   font-weight: bold;
   color: #242423;
   line-height: 1.6;
-
+  overflow-x:hidden;
 }
 
 
@@ -1131,9 +1131,9 @@ a {
 /*------Group-----*/
 .group_section {
   width: 100%;
-  background-color: #8e8e8e;
+  /* background-color: #8e8e8e; */
   padding: 50px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .group {
