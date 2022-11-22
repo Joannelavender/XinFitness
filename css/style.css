@@ -993,6 +993,14 @@ a {
   letter-spacing: 5px;
 }
 
+.service_pay_first:hover{
+  transform:scale(1.2);
+}
+
+.service_pay_second:hover{
+  transform:scale(1.2);
+}
+
 @media screen and (max-width: 414px) {
   .service_banner {
     padding-top: 75px;
@@ -1046,6 +1054,7 @@ a {
 
 .service_pay_first {
   border: 2px solid #f0be19;
+  transition:.7s;
 }
 
 .service_pay_first h3 {
@@ -1062,6 +1071,7 @@ a {
   border: 2px solid #f0be19;
   width: 50%;
   position: relative;
+  transition: .7s;
 }
 .service_pay_second .fa-solid {
   font-size: 36px;
@@ -1214,6 +1224,12 @@ a {
   position: absolute;
   left: 150px;
   top: 100px;
+  transition: .5s;
+}
+
+.first_div_container:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0, 0.7);
+  cursor: pointer;
 }
 
 .first_div_container h3 {
@@ -1244,6 +1260,12 @@ a {
   position: absolute;
   right: 70px;
   top: 150px;
+  transition: .5s;
+}
+
+.second_div_container:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0, 0.7);
+  cursor: pointer;
 }
 
 .second_div_container li {
