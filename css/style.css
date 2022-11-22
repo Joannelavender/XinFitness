@@ -84,12 +84,12 @@ a {
   display: none;
 }
 .scroll_top .text {
-  animation: scroll_top 5s linear infinite;
+  animation: scroll_top 10s linear infinite;
 }
 
 @keyframes scroll_top {
   from {
-    transform: translateX(10%);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(-100%);
