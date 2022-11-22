@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/slide_group.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/efeb5ad6f6.js" crossorigin="anonymous"></script>
@@ -55,19 +57,26 @@
               健身不孤單！即日起至11月底加入會員即送一堂教練體驗課
             </div>
           </div>
-    <!---section--->
+    <!-- -section--->
 
     <section class="group_section">
         <div class="group">
-            <!-- <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <img src="./image/group/Ariel.png" alt="">
-                  <img src="./image/group/Jane.png" alt="">
-                  <img src="./image/group/Zack.png" alt="">
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div> -->
+          <h2>OUR TEAM</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./image/group/Ariel_test-removebg.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/group/Ariel_test-removebg.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/group/Ariel_test-removebg.png" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
 
     </section>
@@ -110,8 +119,31 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./javascript/changebg.js"></script>
     <script src="./javascript/open.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+              414: {
+                slidesPerView: 1.5,
+                centeredSlides: false,
+                spaceBetween: 10,
+                // watchOverflow: true,
+              }},
+      });
+    </script>
 
 
 </body>
