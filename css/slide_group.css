@@ -70,6 +70,8 @@
 
 .swiper-slide img:hover {
   animation: headShake 5s 1;
+  cursor: pointer;
+  
 }
 
 @keyframes headShake {
@@ -77,16 +79,16 @@
     transform: translateX(0);
   }
   6.5% {
-    transform: translateX(-9px) rotateY(-15deg);
+    transform: translateX(-9px) rotateY(-9deg);
   }
   18.5% {
-    transform: translateX(4px) rotateY(10deg);
+    transform: translateX(4px) rotateY(4deg);
   }
   31.5% {
-    transform: translateX(-6px) rotateY(-3deg);
+    transform: translateX(-6px) rotateY(-6deg);
   }
   43.5% {
-    transform: translateX(1px) rotateY(4deg);
+    transform: translateX(4px) rotateY(4deg);
   }
   50% {
     transform: translateX(0);

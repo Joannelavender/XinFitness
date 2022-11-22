@@ -32,8 +32,8 @@ a {
 
 .btn:hover{
   background-color: transparent;
-  color:#f0be19;
-  border:2px solid #242423;
+  color:#242423;
+  border:2px solid #f0be19;
 }
 
 /*---------index----------*/
@@ -84,15 +84,15 @@ a {
   display: none;
 }
 .scroll_top .text {
-  animation: scroll_top 3s linear infinite;
+  animation: scroll_top 5s linear infinite;
 }
 
 @keyframes scroll_top {
   from {
-    transform: translateX(5%);
+    transform: translateX(10%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
@@ -1146,10 +1146,11 @@ a {
 
 .group {
   width: 94%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 0 0 0px;
-  height: 490px;
+  height: 650px;
   transform: translateX(130px);
   background-color:#8e8e8e;
 } 
@@ -1167,7 +1168,7 @@ a {
   .group{
     transform: unset;
     width: 190%;
-    padding: 20px 0 0 0px;
+    padding: 10px 0 10px 0px;
    
     height: 80%;
   }
@@ -1177,7 +1178,11 @@ a {
   .group_section{
     overflow: hidden;
   }
-
+  .scroll_top{
+  height: 65px;
+  line-height: 65px;
+  padding-top: 65px;
+}
 }
 /*------Coach-----*/
 
@@ -1403,7 +1408,7 @@ a {
 .form_control_select {
   border: 1.5px solid #242423;
   display: block;
-  width: 101.5%;
+  width: 103.9%;
   margin: 5px 0;
   line-height: 40px;
   height: 45px;
