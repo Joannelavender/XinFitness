@@ -89,7 +89,7 @@ a {
 
 @keyframes scroll_top {
   from {
-    transform: translateX(10%);
+    transform: translateX(5%);
   }
   to {
     transform: translateX(-50%);
@@ -413,8 +413,8 @@ a {
   height: 300px;
   background-size: cover;
   position: absolute;
-  left: 80px;
-  bottom: -35px;
+  left: 39px;
+  bottom: -6px;
   max-width: 100%;
 }
 
@@ -1411,7 +1411,13 @@ a {
   letter-spacing: 2px;
   font-family: "Noto Sans TC";
   font-weight: bold;
+  transition: .7s;
 }
+
+.form_control_submit:hover{
+  box-shadow: 10px 10px 5px rgba(0,0,0,.5);
+}
+
 
 @media screen and (max-width: 414px) {
   .section_item h3::before,

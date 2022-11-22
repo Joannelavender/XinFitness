@@ -61,7 +61,7 @@
 }
 
 .top_ulitem .top_container a {
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 0 auto;
   font-size: 15px;
   letter-spacing: .1em;
@@ -102,6 +102,7 @@
     background-color: #d9d9d9;
     width: 100%;
     height: 75px;
+    justify-content: unset;
   }
   .top_ul {
     /* transform: translateX(-150%); */
@@ -116,6 +117,7 @@
     left: 0;
     z-index: 10;
     overflow: hidden;
+    
   }
 
   /*展開漢堡選單*/
@@ -189,7 +191,7 @@
     display: block;
     position: absolute;
     left: 30px;
-    bottom: 238px;
+    bottom: 281px;
     color: #fafafa;
     font-size: 16px;
     padding-left: 62px;
