@@ -82,6 +82,7 @@ a {
   line-height: 52px;
   justify-content: center;
   display: none;
+  overflow: hidden;
 }
 .scroll_top .text {
   animation: scroll_top 10s linear infinite;
